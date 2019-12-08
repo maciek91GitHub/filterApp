@@ -1,0 +1,16 @@
+:host {
+    height: 100%;
+    display: block;
+}
+
+.right-button {
+    min-width: 80px;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.h-80 {
+    height: 80%;
+}

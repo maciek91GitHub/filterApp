@@ -1,0 +1,8 @@
+<div class="ml-3 w-50 d-flex flex-column">
+  <div class="d-flex" *ngFor="let file of filesList">
+    <h5 class="font-weight-bold">
+      {{ file.name }}
+    </h5>
+    <p class="ml-1">({{ file.created }})</p>
+  </div>
+</div>

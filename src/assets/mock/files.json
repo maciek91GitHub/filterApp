@@ -1,0 +1,52 @@
+{
+    "0": {
+        "name": "Video 1",
+        "type": "Video",
+        "created": "2019-03-25"
+    },
+    "1": {
+        "name": "Video 2",
+        "type": "Video",
+        "created": "2011-10-21"
+    },
+    "2": {
+        "name": "Video 3",
+        "type": "Video",
+        "created": "1999-01-02"
+    },
+    "3": {
+        "name": "Image 1",
+        "type": "Image",
+        "created": "2008-01-22"
+    },
+    "4": {
+        "name": "Image 2",
+        "type": "Image",
+        "created": "2018-05-09"
+    },
+    "5": {
+        "name": "Image 3",
+        "type": "Image",
+        "created": "1998-10-04"
+    },
+    "6": {
+        "name": "Image 4",
+        "type": "Image",
+        "created": "2008-01-22"
+    },
+    "7": {
+        "name": "Audio 1",
+        "type": "Audio",
+        "created": "2012-12-15"
+    },
+    "8": {
+        "name": "Audio 2",
+        "type": "Audio",
+        "created": "2010-01-01"
+    },
+    "9": {
+        "name": "Document 1",
+        "type": "Document",
+        "created": "2000-10-13"
+    }
+}

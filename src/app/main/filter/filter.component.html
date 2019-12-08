@@ -1,0 +1,28 @@
+<div class="dropdown border">
+  <button
+    class="btn btn-light dropdown-toggle filter-main-button"
+    type="button"
+    data-toggle="dropdown"
+    aria-haspopup="true"
+    aria-expanded="false"
+  >
+    <div class="d-flex flex-column">
+      <div class="text-left filter-name font-weight-bold float-left mb-1">
+        {{ filterTitle }}:
+      </div>
+      <div class="text-left text-danger font-weight-bold float-left">
+        {{ currentFilter }}
+      </div>
+    </div>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div
+      *ngFor="let option of filterOptions"
+      class="dropdown-item filter-option"
+      (click)="onOptionSelected(option)"
+      (touchstart)="onOptionSelected(option)"
+    >
+      {{ option }}
+    </div>
+  </div>
+</div>

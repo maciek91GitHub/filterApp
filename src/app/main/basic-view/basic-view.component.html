@@ -1,0 +1,41 @@
+<app-header
+  [searchTextInput]="currentSearchText"
+  (serachKeyChanged)="onSearchByInputText($event)"
+></app-header>
+<div class="row bg-light d-flex">
+  <div class="col-6 d-flex">
+    <app-filter
+      [filterTitle]="'Filter by'"
+      [filterOptions]="typeFiltersList"
+      [currentFilter]="currentTypeFilter"
+      (filterKeyChanged)="onTypeFilterChosen($event)"
+    ></app-filter>
+    <app-filter
+      [filterTitle]="'Sort by'"
+      [filterOptions]="sortTypeFiltersList"
+      [currentFilter]="currentSortByFilter"
+      (filterKeyChanged)="onSortByChosen($event)"
+    ></app-filter>
+  </div>
+  <div class="col-6 d-flex flex-row-reverse">
+    <button
+      type="button"
+      class="btn btn-light border right-button"
+      (click)="onSortOrderChosen()"
+      (touchstart)="onSortOrderChosen()"
+    >
+      <img [src]="'../../assets/icons/' + orderIcon" />
+    </button>
+    <button
+      type="button"
+      class="btn btn-light rounded-0 right-button"
+      (click)="resetFilters()"
+      (touchstart)="resetFilters()"
+    >
+      &#10006; Clear
+    </button>
+  </div>
+</div>
+<div class="h-80 w-100 bg-white">
+  <app-items-list [filesList]="filteredFilesList" class="ml-3"></app-items-list>
+</div>

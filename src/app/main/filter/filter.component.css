@@ -1,0 +1,11 @@
+.filter-name {
+    font-size: 12px;
+}
+
+.filter-main-button {
+    width: 200px;
+}
+
+.filter-option {
+    cursor: pointer;
+}
